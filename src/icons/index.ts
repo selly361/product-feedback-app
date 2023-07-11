@@ -1,0 +1,11 @@
+export { ReactComponent as ArrowDownIcon } from "./icon-arrow-down.svg";
+export { ReactComponent as ArrowLeftIcon } from "./icon-arrow-left.svg";
+export { ReactComponent as ArrowUpIcon } from "./icon-arrow-up.svg";
+export { ReactComponent as CheckIcon } from "./icon-check.svg";
+export { ReactComponent as CloseIcon } from "./icon-close.svg";
+export { ReactComponent as CommentsIcon } from "./icon-comments.svg";
+export { ReactComponent as EditFeedbackIcon } from "./icon-edit-feedback.svg";
+export { ReactComponent as HamburgerIcon } from "./icon-hamburger.svg";
+export { ReactComponent as NewFeedbackIcon } from "./icon-new-feedback.svg";
+export { ReactComponent as PlusIcon } from "./icon-plus.svg";
+export { ReactComponent as SuggestionsIcon } from "./icon-suggestions.svg";
