@@ -1,4 +1,4 @@
-import { userArray } from "constants/userArray"
+import { userArray } from "Constants/userArray"
 
 function findUser(username: string){
     
