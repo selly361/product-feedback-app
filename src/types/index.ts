@@ -49,3 +49,14 @@ export interface ProductFeedBack {
   currentUser: User;
   productRequests: ProductRequest[];
 }
+
+export interface InitialState {
+  currentUser: User
+  suggestions: ProductRequest[]
+  roadmap: ProductRequest[]
+  filteredSuggestions: ProductRequest[]
+  filterConfig: {
+    sortPreference: TSortPreference
+    category: TCategory
+  }
+}
