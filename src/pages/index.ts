@@ -1,0 +1,5 @@
+export { default as HomePage } from "./Home"
+export { default as ProductPage } from "./Product"
+export { default as EditFeedBackPage } from "./EditFeedBack"
+export { default as AddFeedBackPage } from "./AddFeedBack"
+export { default as RoadMapPage } from "./RoadMap"
