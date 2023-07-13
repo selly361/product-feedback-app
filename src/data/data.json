@@ -20,7 +20,8 @@
           "user": {
             "image": "./assets/user-images/image-suzanne.jpg",
             "name": "Suzanne Chang",
-            "username": "upbeat1811"
+            "username": "upbeat1811",
+            "replies": []
           }
         },
         {
@@ -29,7 +30,8 @@
           "user": {
             "image": "./assets/user-images/image-thomas.jpg",
             "name": "Thomas Hood",
-            "username": "brawnybrave"
+            "username": "brawnybrave",
+            "replies": []
           }
         }
       ]
@@ -49,7 +51,8 @@
           "user": {
             "image": "./assets/user-images/image-elijah.jpg",
             "name": "Elijah Moss",
-            "username": "hexagon.bestagon"
+            "username": "hexagon.bestagon",
+            "replies": []
           }
         },
         {
@@ -98,7 +101,8 @@
           "user": {
             "image": "./assets/user-images/image-george.jpg",
             "name": "George Partridge",
-            "username": "soccerviewer8"
+            "username": "soccerviewer8",
+            "replies": []
           }
         }
       ]
@@ -112,13 +116,14 @@
       "status": "suggestion",
       "description": "Images and screencasts can enhance comments on solutions.",
       "comments": [
-        { 
+        {
           "id": 6,
           "content": "Right now, there is no ability to add images while giving feedback which isn't ideal because I have to use another app to show what I mean",
           "user": {
             "image": "./assets/user-images/image-javier.jpg",
             "name": "Javier Pollard",
-            "username": "warlikeduke"
+            "username": "warlikeduke",
+            "replies": []
           }
         },
         {
@@ -127,7 +132,8 @@
           "user": {
             "image": "./assets/user-images/image-roxanne.jpg",
             "name": "Roxanne Travis",
-            "username": "peppersprime32"
+            "username": "peppersprime32",
+            "replies": []
           }
         }
       ]
@@ -167,7 +173,8 @@
           "user": {
             "image": "./assets/user-images/image-jackson.jpg",
             "name": "Jackson Barker",
-            "username": "countryspirit"
+            "username": "countryspirit",
+            "replies": []
           }
         }
       ]
@@ -179,7 +186,8 @@
       "upvotes": 3,
       "upvoted": [],
       "status": "suggestion",
-      "description": "Challenge preview images are missing when you apply a filter."
+      "description": "Challenge preview images are missing when you apply a filter.",
+      "comments": []
     },
     {
       "id": 7,
@@ -196,7 +204,8 @@
           "user": {
             "image": "./assets/user-images/image-victoria.jpg",
             "name": "Victoria Mejia",
-            "username": "arlen_the_marlin"
+            "username": "arlen_the_marlin",
+            "replies": []
           }
         },
         {
@@ -205,7 +214,8 @@
           "user": {
             "image": "./assets/user-images/image-jackson.jpg",
             "name": "Jackson Barker",
-            "username": "countryspirit"
+            "username": "countryspirit",
+            "replies": []
           }
         }
       ]
@@ -225,7 +235,8 @@
           "user": {
             "image": "./assets/user-images/image-george.jpg",
             "name": "George Partridge",
-            "username": "soccerviewer8"
+            "username": "soccerviewer8",
+            "replies": []
           }
         }
       ]
@@ -245,7 +256,8 @@
           "user": {
             "image": "./assets/user-images/image-ryan.jpg",
             "name": "Ryan Welles",
-            "username": "voyager.344"
+            "username": "voyager.344",
+            "replies": []
           }
         }
       ]
@@ -265,7 +277,8 @@
           "user": {
             "image": "./assets/user-images/image-suzanne.jpg",
             "name": "Suzanne Chang",
-            "username": "upbeat1811"
+            "username": "upbeat1811",
+            "replies": []
           }
         }
       ]
@@ -277,7 +290,8 @@
       "upvotes": 9,
       "upvoted": [],
       "status": "in-progress",
-      "description": "Screenshots of solutions with animations don’t display correctly."
+      "description": "Screenshots of solutions with animations don’t display correctly.",
+      "comments": []
     },
     {
       "id": 12,
