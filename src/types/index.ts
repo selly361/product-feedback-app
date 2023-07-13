@@ -5,49 +5,49 @@ export type TStatus =
   | "live"
   | "bug"
   | "feature"
-  | "enhancement";
+  | "enhancement"
 
-export type TCategory = "enhancement" | "feature" | "bug" | "ui" | "ux" | "all";
+export type TCategory = "enhancement" | "feature" | "bug" | "ui" | "ux" | "all"
 
 export type TSortPreference =
   | "Most Upvotes"
   | "Least Upvotes"
   | "Most Comments"
-  | "Least Comments";
+  | "Least Comments"
 
 export interface User {
-  image: string;
-  name: string;
-  username: string;
+  image: string
+  name: string
+  username: string
 }
 
-interface Comment {
-  id: number;
-  content: string;
-  user: User;
-  replies?: Reply[];
+export interface Comment {
+  id: number
+  content: string
+  user: User
+  replies?: Reply[]
 }
 
-interface Reply {
-  content: string;
-  replyingTo: string;
-  user: User;
+export interface Reply {
+  content: string
+  replyingTo: string
+  user: User
 }
 
 export interface ProductRequest {
-  id: number;
-  title: string;
-  category: string;
-  upvotes: number;
-  upvoted: string[];
-  status: string;
-  description: string;
-  comments?: Comment[];
+  id: number
+  title: string
+  category: string
+  upvotes: number
+  upvoted: string[]
+  status: string
+  description: string
+  comments: Comment[]
 }
 
 export interface ProductFeedBack {
-  currentUser: User;
-  productRequests: ProductRequest[];
+  currentUser: User
+  productRequests: ProductRequest[]
 }
 
 export interface InitialState {
@@ -59,4 +59,15 @@ export interface InitialState {
     sortPreference: TSortPreference
     category: TCategory
   }
+}
+
+export interface ICommentPayload  {
+  comment: Comment
+  productId: number
+}
+
+export interface IReplyPayload  {
+  commentId: number
+  productId: number
+  reply: Reply
 }
