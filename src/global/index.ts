@@ -135,6 +135,9 @@ button {
     width: 158px;
     height: 44px;
     border-radius: 10px;
+
+    display: grid;
+    place-items: center;
 }
 
 svg, button {
