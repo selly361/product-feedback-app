@@ -44,12 +44,10 @@ html {
 body {
     min-height: 100vh;
     width: 100vw;
-    
     display: grid;
-    grid-template-columns: 192px 825px;
     place-items: center;
-
     background-color: #F7F8FD;
+    margin-bottom: 92px;
 }
 
 h1 {
