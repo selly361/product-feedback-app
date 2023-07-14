@@ -1,25 +1,19 @@
-import { categorizeProducts, sort } from "utils";
-
 import type { InitialState } from "types";
+import { categorizeProducts } from "utils/categorizeProducts";
 import data from "data/data.json"
+import { sort } from "utils";
+
+const { suggestions, roadmap } = categorizeProducts(data.productRequests)
+
 
 const initialState: InitialState = {
     currentUser: data.currentUser,
-    suggestions: [],
-    roadmap: [],
-    filteredSuggestions: [],
+    suggestions,
+    roadmap,
+    filteredSuggestions: sort(suggestions, "Most Upvotes"),
     filterConfig: {
       sortPreference: "Most Upvotes",
       category: "all",
     },
 }
-
-const { suggestions, roadmap } = categorizeProducts(data.productRequests)
-
-initialState.suggestions = suggestions
-initialState.roadmap = roadmap
-
-
-initialState.filteredSuggestions = sort(initialState.suggestions, initialState.filterConfig.sortPreference)
-
 export { initialState }
