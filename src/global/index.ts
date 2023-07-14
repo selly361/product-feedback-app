@@ -138,6 +138,10 @@ button {
 
     display: grid;
     place-items: center;
+
+    color: #F2F4FE;
+    font-size: 14px;
+    font-weight: 700;
 }
 
 svg, button {
