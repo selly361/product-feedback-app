@@ -1,8 +1,14 @@
+import { Main } from "components"
 import React from 'react'
+import { SideBar } from 'components'
+import { StyledHome } from './Home.styles'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <StyledHome>
+      <SideBar />
+      <Main />
+    </StyledHome>
   )
 }
 
