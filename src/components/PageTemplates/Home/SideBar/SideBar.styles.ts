@@ -4,7 +4,8 @@ import styled from "styled-components";
 export const StyledAside = styled.aside`
   display: grid;
   gap: 24px;
-
+  align-content: start;
+  
   section {
     width: 255px;
     min-height: 137px;
@@ -58,6 +59,10 @@ export const StyledButton = styled.button`
   &.active {
     color: #fff;
     background: #4661e6;
+  }
+
+  &:hover {
+    background: #CFD7FF;
   }
 `;
 
