@@ -1,4 +1,5 @@
 export { default as Button } from "./shared/Button"
+export { default as Tag } from "./shared/Tag"
 export { default as SideBar } from "./PageTemplates/Home/SideBar"
 export { default as Header } from "./PageTemplates/Home/Header"
 export { default as Main } from "./PageTemplates/Home/Main"
