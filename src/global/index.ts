@@ -47,7 +47,8 @@ body {
     display: grid;
     place-items: center;
     background-color: #F7F8FD;
-    margin-bottom: 92px;
+    margin-top: 10px;
+    overflow-x: hidden;
 }
 
 h1 {
