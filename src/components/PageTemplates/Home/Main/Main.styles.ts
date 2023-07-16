@@ -14,6 +14,12 @@ export const StyledMain = styled.main`
 
 export const Container = styled.div`
     width: 825px;
- 
+    height: 500px;
+    padding: 5px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 
+    overflow-y: auto;
 `

@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledProduct = styled.div`
   width: 100%;
   background-color: white;
-  height: 151px;
+  min-height: 151px;
   border-radius: 10px;
 
   padding: 28px 32px 0 32px;
@@ -11,7 +11,7 @@ export const StyledProduct = styled.div`
   display: flex;
   justify-content: space-between;
     cursor: pointer;
-
+    
     h3 {
         transition: .5s ease color;
     }
@@ -38,13 +38,16 @@ export const ContentContainer = styled.article`
 
 export const Container = styled.div`
   display: flex;
-  align-items: center;
+  align-items: start;
   gap: 40px;
+  
 `;
 
 export const SubContainer = styled(Container)`
   gap: 8px;
-
+  height: 100%;
+  align-items: center;
+  
   h5 {
     color: #3a4374;
     font-size: 16px;
