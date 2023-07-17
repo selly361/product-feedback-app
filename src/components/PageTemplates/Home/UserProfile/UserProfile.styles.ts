@@ -4,6 +4,11 @@ export const StyledUserProfile = styled.div`
     display: flex;
     gap: 8px;
     align-items: center;
+    cursor: pointer;
+
+    &:hover img {
+        border: 2px solid #FF7E1B;
+    }
 `
 
 export const StyledImage = styled.img`
@@ -11,14 +16,11 @@ export const StyledImage = styled.img`
     width: 40px;
     object-fit: contain;
     border-radius: 50%;
-    cursor: pointer;
     transition: .5s ease border;
     border: 2px solid transparent;
 
 
-    &:hover {
-        border: 2px solid #FF7E1B;
-    }
+
 `
 
 export const Username = styled.h5`
