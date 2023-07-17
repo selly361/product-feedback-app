@@ -12,6 +12,7 @@ import {
 } from "./SideBar.styles";
 import { useAppDispatch, useAppSelector } from "app/hooks";
 
+import { UserProfile } from "components";
 import { buttonCategories } from "constantParameters";
 import { filterCategory } from "features/product-feedback-app/productFeedbackSlice";
 
@@ -32,6 +33,7 @@ function SideBar() {
   return (
     <StyledAside>
       <TopSection>
+        <UserProfile />
         <h2>Frontend Mentor</h2>
         <h6>Feedback Board</h6>
       </TopSection>
@@ -73,7 +75,6 @@ function SideBar() {
               <Dot type="live" />
               <h5>Live</h5>
             </div>
-
             <Amount>{liveLength}</Amount>
           </SubContainer>
         </Container>
