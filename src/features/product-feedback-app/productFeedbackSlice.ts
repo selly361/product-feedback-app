@@ -73,6 +73,10 @@ export const productFeedbackSlice = createSlice({
         (product) => product.id !== id
       )
 
+      state.roadmap = state.roadmap.filter(
+        (product) => product.id !== id
+      )
+
       filter(state)
     },
 
