@@ -32,27 +32,26 @@ export const productFeedbackSlice = createSlice({
 
       filter(state)
     },
-
     toggleVote: (state, action: PayloadAction<number>) => {
       const id = action.payload;
       const username = state.currentUser.username;
-    
+
       const selectedProduct = state.suggestions.find((product) => product.id === id);
-    
+
       if (selectedProduct) {
         const index = state.suggestions.indexOf(selectedProduct);
-    
+
         if (selectedProduct.upvoted.includes(username)) {
           state.suggestions[index].upvoted = selectedProduct.upvoted.filter((name) => name !== username);
+          state.suggestions[index].upvotes--;
         } else {
           state.suggestions[index].upvoted.push(username);
+          state.suggestions[index].upvotes++;
         }
       }
 
-      filter(state)
-    }
-    ,
-
+      filter(state);
+    },
     addProduct: (state, action: PayloadAction<ProductRequest>) => {
       const createdProduct = action.payload
 
