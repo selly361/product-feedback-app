@@ -5,7 +5,7 @@ export const StyledAside = styled.aside`
   display: grid;
   gap: 24px;
   align-content: start;
-  
+
   section {
     width: 255px;
     min-height: 137px;
@@ -14,8 +14,11 @@ export const StyledAside = styled.aside`
 `;
 
 export const TopSection = styled.section`
-  background-image: url("suggestions/desktop/background-header.png");
-  padding: 62px 72px 24px 24px;
+  width: 255px;
+  height: 137px;
+  background: url("suggestions/desktop/background-header.png") no-repeat;
+  background-size: cover;
+  padding: 20px 72px 28px 24px;
 
   * {
     color: #fff;
@@ -62,7 +65,7 @@ export const StyledButton = styled.button`
   }
 
   &:hover {
-    background: #CFD7FF;
+    background: #cfd7ff;
   }
 `;
 
@@ -92,7 +95,6 @@ export const SubContainer = styled.div`
   h5 {
     font-weight: 400;
     color: #647196;
-
   }
 `;
 
@@ -102,7 +104,7 @@ export const StyledLink = styled(Link)`
   font-weight: 600;
   text-decoration-line: underline;
 
-  transition: .5s ease color;
+  transition: 0.5s ease color;
 
   &:hover {
     color: #8397f8;
@@ -113,7 +115,7 @@ export const Dot = styled.div<{ type: "planned" | "in-progress" | "live" }>`
   width: 8px;
   height: 8px;
   border-radius: 4px;
-  
+
   background-color: ${(props) =>
     props.type === "planned"
       ? "#F49F85"
@@ -123,5 +125,5 @@ export const Dot = styled.div<{ type: "planned" | "in-progress" | "live" }>`
 `;
 
 export const Amount = styled.h5`
-    color: #647196;
-`
+  color: #647196;
+`;
