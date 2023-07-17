@@ -22,8 +22,8 @@ function UserProfile() {
     }
 
   return (
-    <StyledUserProfile>
-        <StyledImage onClick={handleClick} src={image} />
+    <StyledUserProfile onClick={handleClick}>
+        <StyledImage src={image} />
       <Username>{username}</Username>  
     </StyledUserProfile>
   )
