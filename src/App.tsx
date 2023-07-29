@@ -14,7 +14,7 @@ function App() {
         <Route path="/add" element={<AddFeedBackPage />} />
         <Route path="/roadmap" element={<RoadMapPage />} />
         <Route path="/edit/:id" element={<EditFeedBackPage />} />
-        <Route path="/:id" element={<ProductPage />} />
+        <Route path="/product/:id" element={<ProductPage />} />
       </Routes>
     </Fragment>
   );

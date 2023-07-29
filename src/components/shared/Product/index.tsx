@@ -12,7 +12,7 @@ function Product({ productReq }: IProductProps) {
 
     
   return (
-    <StyledProduct onClick={() => navigate(`/${productReq.id}`)}>
+    <StyledProduct onClick={() => navigate(`product/${productReq.id}`)}>
       <Container>
         <UpvoteButton
           productId={productReq.id}
