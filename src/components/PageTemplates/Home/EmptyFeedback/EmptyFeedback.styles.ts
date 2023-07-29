@@ -8,13 +8,11 @@ export const StyledEmptyFeedback = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 48px;
 
   border-radius: 10px;
   background: #fff;
-
-  button {
-    margin: auto;
-  }
+  
 `;
 
 export const StyledArticle = styled.article`
@@ -28,6 +26,7 @@ export const StyledArticle = styled.article`
 
 export const StyledTitle = styled.h1`
   color: #3a4374;
+  margin-top: 5.3px;
 `;
 
 export const StyledParagraph = styled.h5`
