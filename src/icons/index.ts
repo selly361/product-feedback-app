@@ -9,3 +9,4 @@ export { ReactComponent as HamburgerIcon } from "./icon-hamburger.svg";
 export { ReactComponent as NewFeedbackIcon } from "./icon-new-feedback.svg";
 export { ReactComponent as PlusIcon } from "./icon-plus.svg";
 export { ReactComponent as SuggestionsIcon } from "./icon-suggestions.svg";
+export { ReactComponent as EmptyIllustration } from "./illustration-empty.svg";
