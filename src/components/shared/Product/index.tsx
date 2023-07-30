@@ -1,18 +1,26 @@
 import { Container, ContentContainer, StyledProduct, SubContainer } from "./Product.styles";
 import { Tag, UpvoteButton } from "components";
+import { useLocation, useNavigate } from "react-router-dom";
 
 import { CommentsIcon } from "icons";
 import { IProductProps } from "./Product.types";
+import { numberOfComments } from "utils";
 import { useAppSelector } from "app/hooks";
-import { useNavigate } from "react-router-dom";
 
 function Product({ productReq }: IProductProps) {
   const username = useAppSelector((state) => state.currentUser.username);
     const navigate = useNavigate()
 
+    const location = useLocation()
+
+    const handleClick = () => {
+      if(location.pathname === "/"){
+        navigate(`product/${productReq.id}`)
+      }
+    }
     
   return (
-    <StyledProduct onClick={() => navigate(`product/${productReq.id}`)}>
+    <StyledProduct onClick={handleClick}>
       <Container>
         <UpvoteButton
           productId={productReq.id}
@@ -27,7 +35,7 @@ function Product({ productReq }: IProductProps) {
       </Container>
       <SubContainer>
         <CommentsIcon />
-        <h5>{productReq.comments.length}</h5>
+        <h5>{numberOfComments(productReq.comments)}</h5>
       </SubContainer>
     </StyledProduct>
   );
