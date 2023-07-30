@@ -1,27 +1,25 @@
-import { ProductRequest, TSortPreference } from "types"
+import { ProductRequest, TSortPreference } from "types";
 
-function sort(data: ProductRequest[], sortPreference: TSortPreference){
-    let sorted: ProductRequest[];
-    
-    if(sortPreference === "Most Comments"){
-        sorted = data.sort((a, b) => (b.comments?.length || 0) - (a.comments?.length || 0))
-    }
+import { numberOfComments } from "utils";
 
-    else if(sortPreference === "Least Comments"){
-        sorted = data.sort((a, b) => (a.comments?.length || 0) - (b.comments?.length || 0))
+function sort(data: ProductRequest[], sortPreference: TSortPreference) {
+  let sorted: ProductRequest[];
 
-    }
-    
-    else if(sortPreference === "Most Upvotes"){
-        sorted = data.sort((a, b) => b.upvotes - a.upvotes)
-    }
+  if (sortPreference === "Most Comments") {
+    sorted = data.sort(
+      (a, b) => numberOfComments(b?.comments) - numberOfComments(a?.comments)
+    );
+  } else if (sortPreference === "Least Comments") {
+    sorted = data.sort(
+      (a, b) => numberOfComments(a?.comments) - numberOfComments(b?.comments)
+    );
+  } else if (sortPreference === "Most Upvotes") {
+    sorted = data.sort((a, b) => b.upvotes - a.upvotes);
+  } else {
+    sorted = data.sort((a, b) => a.upvotes - b.upvotes);
+  }
 
-    else {
-        sorted = data.sort((a, b) => a.upvotes - b.upvotes)
-    }
-
-    return sorted;
+  return sorted;
 }
 
-
-export { sort }
+export { sort };
