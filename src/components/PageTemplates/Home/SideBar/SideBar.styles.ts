@@ -16,7 +16,7 @@ export const StyledAside = styled.aside`
 export const TopSection = styled.section`
   width: 255px;
   height: 137px;
-  background: url("suggestions/desktop/background-header.png") no-repeat;
+  background: url("/suggestions/desktop/background-header.png") no-repeat;
   background-size: cover;
   padding: 20px 72px 28px 24px;
 
