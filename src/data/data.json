@@ -17,21 +17,21 @@
         {
           "id": 1,
           "content": "Awesome idea! Trying to find framework-specific projects within the hubs can be tedious",
+          "replies": [],
           "user": {
             "image": "user-images/image-suzanne.jpg",
             "name": "Suzanne Chang",
-            "username": "upbeat1811",
-            "replies": []
+            "username": "upbeat1811"
           }
         },
         {
           "id": 2,
           "content": "Please use fun, color-coded labels to easily identify them at a glance",
+          "replies": [],
           "user": {
             "image": "user-images/image-thomas.jpg",
             "name": "Thomas Hood",
-            "username": "brawnybrave",
-            "replies": []
+            "username": "brawnybrave"
           }
         }
       ]
@@ -48,11 +48,11 @@
         {
           "id": 3,
           "content": "Also, please allow styles to be applied based on system preferences. I would love to be able to browse Frontend Mentor in the evening after my device’s dark mode turns on without the bright background it currently has.",
+          "replies": [],
           "user": {
             "image": "user-images/image-elijah.jpg",
             "name": "Elijah Moss",
-            "username": "hexagon.bestagon",
-            "replies": []
+            "username": "hexagon.bestagon"
           }
         },
         {
@@ -98,11 +98,11 @@
         {
           "id": 5,
           "content": "Much easier to get answers from devs who can relate, since they've either finished the challenge themselves or are in the middle of it.",
+          "replies": [],
           "user": {
             "image": "user-images/image-george.jpg",
             "name": "George Partridge",
-            "username": "soccerviewer8",
-            "replies": []
+            "username": "soccerviewer8"
           }
         }
       ]
@@ -119,21 +119,21 @@
         {
           "id": 6,
           "content": "Right now, there is no ability to add images while giving feedback which isn't ideal because I have to use another app to show what I mean",
+          "replies": [],
           "user": {
             "image": "user-images/image-javier.jpg",
             "name": "Javier Pollard",
-            "username": "warlikeduke",
-            "replies": []
+            "username": "warlikeduke"
           }
         },
         {
           "id": 7,
           "content": "Yes I'd like to see this as well. Sometimes I want to add a short video or gif to explain the site's behavior..",
+          "replies": [],
           "user": {
             "image": "user-images/image-roxanne.jpg",
             "name": "Roxanne Travis",
-            "username": "peppersprime32",
-            "replies": []
+            "username": "peppersprime32"
           }
         }
       ]
@@ -170,11 +170,11 @@
         {
           "id": 9,
           "content": "I've been saving the profile URLs of a few people and I check what they’ve been doing from time to time. Being able to follow them solves that",
+          "replies": [],
           "user": {
             "image": "user-images/image-jackson.jpg",
             "name": "Jackson Barker",
-            "username": "countryspirit",
-            "replies": []
+            "username": "countryspirit"
           }
         }
       ]
@@ -201,21 +201,21 @@
         {
           "id": 10,
           "content": "This would be awesome! It would be so helpful to see an overview of my code in a way that makes it easy to spot where things could be improved.",
+          "replies": [],
           "user": {
             "image": "user-images/image-victoria.jpg",
             "name": "Victoria Mejia",
-            "username": "arlen_the_marlin",
-            "replies": []
+            "username": "arlen_the_marlin"
           }
         },
         {
           "id": 11,
           "content": "Yeah, this would be really good. I'd love to see deeper insights into my code!",
+          "replies": [],
           "user": {
             "image": "user-images/image-jackson.jpg",
             "name": "Jackson Barker",
-            "username": "countryspirit",
-            "replies": []
+            "username": "countryspirit"
           }
         }
       ]
@@ -232,11 +232,11 @@
         {
           "id": 12,
           "content": "Having a path through the challenges that I could follow would be brilliant! Sometimes I'm not sure which challenge would be the best next step to take. So this would help me navigate through them!",
+          "replies": [],
           "user": {
             "image": "user-images/image-george.jpg",
             "name": "George Partridge",
-            "username": "soccerviewer8",
-            "replies": []
+            "username": "soccerviewer8"
           }
         }
       ]
@@ -253,11 +253,11 @@
         {
           "id": 13,
           "content": "I haven't built a portfolio site yet, so this would be really helpful. Might it also be possible to choose layout and colour themes?!",
+          "replies": [],
           "user": {
             "image": "user-images/image-ryan.jpg",
             "name": "Ryan Welles",
-            "username": "voyager.344",
-            "replies": []
+            "username": "voyager.344"
           }
         }
       ]
@@ -274,11 +274,11 @@
         {
           "id": 14,
           "content": "This would be great! At the moment, I'm just starting challenges in order to save them. But this means the My Challenges section is overflowing with projects and is hard to manage. Being able to bookmark challenges would be really helpful.",
+          "replies": [],
           "user": {
             "image": "user-images/image-suzanne.jpg",
             "name": "Suzanne Chang",
-            "username": "upbeat1811",
-            "replies": []
+            "username": "upbeat1811"
           }
         }
       ]
