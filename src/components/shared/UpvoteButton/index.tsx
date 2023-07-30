@@ -10,11 +10,9 @@ function UpvoteButton({ active, upvotes, productId }: IUpVoteButtonProps) {
 
     const dispatch = useAppDispatch()
 
-    console.log(active)
 
     const handleClick = (e: MouseEvent) => {
         e.stopPropagation()
-        console.log("clicked")
         dispatch(toggleVote(productId))
     }
     
