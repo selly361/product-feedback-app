@@ -105,7 +105,15 @@ p {
     
 }
 
-input {
+input,
+fieldset,
+button,
+textarea {
+    border: unset;
+    outline: unset;
+}
+
+input, textarea {
     width: 255px;
     height: 48px;
     border-radius: 5px;
@@ -120,7 +128,7 @@ input {
 
     transition: .5s ease border;
 
-    &:active {
+    &:focus {
         border-color: #4661E6;
     }
 
@@ -146,14 +154,7 @@ button {
 svg, button {
     cursor: pointer;
 }
-  
 
-input,
-fieldset,
-button {
-    border: unset;
-    outline: unset;
-}
 
 
 `;
