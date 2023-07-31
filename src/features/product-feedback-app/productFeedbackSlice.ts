@@ -32,7 +32,7 @@ export const productFeedbackSlice = createSlice({
 
       filter(state)
     },
-    toggleVote: (state, action: PayloadAction<number>) => {
+    toggleVote: (state, action: PayloadAction<string>) => {
       const id = action.payload;
       const username = state.currentUser.username;
 
@@ -66,7 +66,7 @@ export const productFeedbackSlice = createSlice({
       filter(state)
     },
 
-    deleteProduct: (state, action: PayloadAction<number>) => {
+    deleteProduct: (state, action: PayloadAction<string>) => {
       const id = action.payload
 
       state.suggestions = state.suggestions.filter(
@@ -138,6 +138,8 @@ export const productFeedbackSlice = createSlice({
 
         state.roadmap = roadmap
         state.suggestions = suggestions
+
+        filter(state)
       }
     },
   },
