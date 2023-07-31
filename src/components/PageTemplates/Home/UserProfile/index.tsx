@@ -14,7 +14,7 @@ function UserProfile() {
     function handleClick(){
       const index = userArray.findIndex(user => user.username === username)
       
-      if(index === userArray.length - 2){
+      if(index === userArray.length - 1){
         dispatch(changeUser(userArray[0].username))
       } else {
         dispatch(changeUser(userArray[index + 1].username))
