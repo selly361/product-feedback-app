@@ -11,7 +11,7 @@ import {
   TinyContainer
 } from "./Comment.styles";
 
-import AddReply from "../AddReply";
+import { AddReply } from "components";
 import { CommentProps } from "./Comment.types";
 import { useState } from "react";
 
