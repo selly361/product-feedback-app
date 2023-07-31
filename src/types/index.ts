@@ -22,11 +22,11 @@ export interface User {
 }
 
 export interface Comment {
-  id: number
+  id: string
   content: string
   user: User
   replies?: Reply[]
-}
+}     
 
 export interface Reply {
   content: string
@@ -35,7 +35,7 @@ export interface Reply {
 }
 
 export interface ProductRequest {
-  id: number
+  id: string
   title: string
   category: string
   upvotes: number
@@ -63,11 +63,11 @@ export interface InitialState {
 
 export interface ICommentPayload  {
   comment: Comment
-  productId: number
+  productId: string
 }
 
 export interface IReplyPayload  {
-  commentId: number
-  productId: number
+  commentId: string
+  productId: string
   reply: Reply
 }
