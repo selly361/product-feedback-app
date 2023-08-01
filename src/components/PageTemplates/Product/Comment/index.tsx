@@ -33,7 +33,7 @@ function Comment({ info, type }: CommentProps) {
           ) : null}
           {info.content}
         </Message>
-        {reply ? <AddReply closeReply={() => setReply(false)} commentId={info.commentId} replyingTo={info.replyingTo} /> : null}
+        {reply ? <AddReply closeReply={() => setReply(false)} commentId={info.commentId} replyingTo={info.user.username} /> : null}
       </Container>
     </StyledComment>
   );
