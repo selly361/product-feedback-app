@@ -13,10 +13,21 @@ function UserProfile() {
   function handleClick() {
     const index = userArray.findIndex((user) => user.username === username);
 
+<<<<<<< HEAD
     if (index === userArray.length - 2) {
       dispatch(changeUser(userArray[0].username));
     } else {
       dispatch(changeUser(userArray[index + 1].username));
+=======
+    function handleClick(){
+      const index = userArray.findIndex(user => user.username === username)
+      
+      if(index === userArray.length - 1){
+        dispatch(changeUser(userArray[0].username))
+      } else {
+        dispatch(changeUser(userArray[index + 1].username))
+      }
+>>>>>>> a6766b04aa8cbb446f1e983fd0ab531e9804d393
     }
   }
 
@@ -28,4 +39,8 @@ function UserProfile() {
   );
 }
 
+<<<<<<< HEAD
 export default UserProfile;
+=======
+export default UserProfile
+>>>>>>> a6766b04aa8cbb446f1e983fd0ab531e9804d393
