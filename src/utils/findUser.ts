@@ -1,11 +1,9 @@
-import { userArray } from "constantParameters"
+import { userArray } from "consts";
 
-function findUser(username: string){
-    
-    const selectedUser = userArray.find(user => user.username === username)
+function findUser(username: string) {
+  const selectedUser = userArray.find((user) => user.username === username);
 
-    return selectedUser
+  return selectedUser;
 }
 
-
-export { findUser }
+export { findUser };

@@ -13,7 +13,7 @@ import {
 import { useAppDispatch, useAppSelector } from "app/hooks";
 
 import { UserProfile } from "components";
-import { buttonCategories } from "constantParameters";
+import { buttonCategories } from "consts";
 import { filterCategory } from "features/product-feedback-app/productFeedbackSlice";
 
 function SideBar() {
@@ -23,12 +23,17 @@ function SideBar() {
 
   const dispatch = useAppDispatch();
 
-  
-  const roadmap = useAppSelector(state => state.roadmap)
+  const roadmap = useAppSelector((state) => state.roadmap);
 
-  const plannedLength = roadmap.filter(product => product.status === "planned").length
-  const liveLength = roadmap.filter(product => product.status === "live").length
-  const inProgressLength = roadmap.filter(product => product.status === "in-progress").length
+  const plannedLength = roadmap.filter(
+    (product) => product.status === "planned"
+  ).length;
+  const liveLength = roadmap.filter(
+    (product) => product.status === "live"
+  ).length;
+  const inProgressLength = roadmap.filter(
+    (product) => product.status === "in-progress"
+  ).length;
 
   return (
     <StyledAside>
