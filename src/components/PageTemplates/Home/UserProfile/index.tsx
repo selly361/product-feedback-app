@@ -10,8 +10,6 @@ function UserProfile() {
 
   const dispatch = useAppDispatch();
 
-  function handleClick() {
-    const index = userArray.findIndex((user) => user.username === username);
 
     function handleClick(){
       const index = userArray.findIndex(user => user.username === username)
@@ -22,7 +20,6 @@ function UserProfile() {
         dispatch(changeUser(userArray[index + 1].username))
       }
     }
-  }
 
   return (
     <StyledUserProfile onClick={handleClick}>
