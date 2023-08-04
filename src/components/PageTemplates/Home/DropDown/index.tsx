@@ -1,7 +1,8 @@
-import { Selector, StyledDropDown, SubContainer } from './DropDown.styles'
+import { Selector, SubContainer } from 'components/shared/Styles/DropDown'
 import { useAppDispatch, useAppSelector } from 'app/hooks'
 
 import { CheckIcon } from 'icons'
+import { StyledDropDown } from "./DropDown.styles"
 import { sort } from 'features/product-feedback-app/productFeedbackSlice'
 
 function DropDown() {
