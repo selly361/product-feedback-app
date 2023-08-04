@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledBackButton = styled.button`
   width: unset;
-  height: unset;
+  height: 30px;
   background-color: transparent;
   display: flex;
   align-items: center;
