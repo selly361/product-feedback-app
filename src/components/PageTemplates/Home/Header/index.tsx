@@ -1,5 +1,5 @@
 import { ArrowDownIcon, NewFeedbackIcon, SuggestionsIcon } from "icons"
-import { Button, DropDown } from "components"
+import { Button, FilterDropDown } from "components"
 import {
   Container,
   SortButton,
@@ -41,7 +41,7 @@ function Header() {
           >
             {sortPreference} <ArrowDownIcon className={open ? "active" : ""} />
           </SortButton>
-          {open && <DropDown />}
+          {open && <FilterDropDown />}
         </SortButtonContainer>
       </Container>
       <Button content="+ Add Feedback" buttonType={1} onClick={() => navigate("/add")} />

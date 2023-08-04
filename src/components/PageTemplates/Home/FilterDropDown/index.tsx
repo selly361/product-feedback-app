@@ -2,10 +2,10 @@ import { Selector, SubContainer } from 'components/shared/Styles/DropDown'
 import { useAppDispatch, useAppSelector } from 'app/hooks'
 
 import { CheckIcon } from 'icons'
-import { StyledDropDown } from "./DropDown.styles"
+import { StyledDropDown } from "./FilterDropDown.styles"
 import { sort } from 'features/product-feedback-app/productFeedbackSlice'
 
-function DropDown() {
+function FilterDropDown() {
 
     const sortPreference = useAppSelector(state => state.filterConfig.sortPreference)
 
@@ -39,4 +39,4 @@ function DropDown() {
   )
 }
 
-export default DropDown
+export default FilterDropDown
