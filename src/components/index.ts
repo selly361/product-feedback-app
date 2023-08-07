@@ -15,4 +15,4 @@ export { default as Comment } from "./PageTemplates/Product/Comment"
 export { default as AddComment } from "./PageTemplates/Product/AddComment"
 export { default as AddReply } from "./PageTemplates/Product/AddReply"
 export { default as AddFeedBackForm } from "./PageTemplates/AddFeedBack/AddFeedBackForm"
-
+export { default as DropDown } from "./shared/DropDown"
