@@ -1,10 +1,10 @@
 import { IButtonProps } from './Button.types'
 import { StyledButton } from './Button.styles'
 
-function Button({ content, onClick, buttonType }: IButtonProps) {
+function Button({ content, buttonType, ...props }: IButtonProps) {
     
   return (
-    <StyledButton type={buttonType} onClick={onClick}>{content}</StyledButton>
+    <StyledButton type={buttonType} {...props}>{content}</StyledButton>
   )
 }
 
