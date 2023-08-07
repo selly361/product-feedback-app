@@ -1,6 +1,6 @@
+import { ButtonHTMLAttributes } from "react"
 
-export interface IButtonProps {
+export interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     content: string
-    onClick: (...args: any) => void
     buttonType: 1 | 2 | 3 | 4
 }
