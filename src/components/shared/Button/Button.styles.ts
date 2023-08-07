@@ -6,8 +6,12 @@ export const StyledButton = styled.button<{ type: 1 | 2 | 3 | 4 }>`
     buttonTypeVariants[props.type].backgroundColor};
   transition: 1s ease background;
 
-  &:hover {
+  &:hover, &:disabled {
     background-color: ${(props) =>
       buttonTypeVariants[props.type].hoverBackgroundColor};
+  }
+
+  &:disabled {
+    cursor: not-allowed;
   }
 `;
