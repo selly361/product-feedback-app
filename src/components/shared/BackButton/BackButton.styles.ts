@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 export const StyledBackButton = styled.button`
-  width: unset;
-  height: 30px;
+  width: max-content;
+  max-height: 30px;
+  min-height: 30px;
   background-color: transparent;
   display: flex;
   align-items: center;
