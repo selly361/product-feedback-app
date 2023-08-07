@@ -1,14 +1,14 @@
 import { buttonTypeVariants } from "consts";
 import styled from "styled-components";
 
-export const StyledButton = styled.button<{ type: 1 | 2 | 3 | 4 }>`
+export const StyledButton = styled.button<{ buttonType: 1 | 2 | 3 | 4 }>`
   background-color: ${(props) =>
-    buttonTypeVariants[props.type].backgroundColor};
+    buttonTypeVariants[props.buttonType].backgroundColor};
   transition: 1s ease background;
 
   &:hover, &:disabled {
     background-color: ${(props) =>
-      buttonTypeVariants[props.type].hoverBackgroundColor};
+      buttonTypeVariants[props.buttonType].hoverBackgroundColor};
   }
 
   &:disabled {

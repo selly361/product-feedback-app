@@ -4,7 +4,7 @@ import { StyledButton } from './Button.styles'
 function Button({ content, buttonType, ...props }: IButtonProps) {
     
   return (
-    <StyledButton type={buttonType} {...props}>{content}</StyledButton>
+    <StyledButton buttonType={buttonType} {...props}>{content}</StyledButton>
   )
 }
 
