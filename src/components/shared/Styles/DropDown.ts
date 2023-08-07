@@ -11,6 +11,7 @@ export const StyledDropDown = styled.div`
     border-bottom: 1px solid rgba(58, 67, 116, 0.15);
   }
 
+
   position: absolute;
   top: calc(50% + 42px);
 
