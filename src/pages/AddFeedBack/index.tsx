@@ -1,8 +1,14 @@
+import { AddFeedBackForm, BackButton } from 'components'
+
 import React from 'react'
+import { StyledAddFeedBack } from './AddFeedBack.styles'
 
 const AddFeedBackPage = () => {
   return (
-    <div>AddFeedBackPage</div>
+    <StyledAddFeedBack>
+      <BackButton />
+      <AddFeedBackForm />
+    </StyledAddFeedBack>
   )
 }
 
