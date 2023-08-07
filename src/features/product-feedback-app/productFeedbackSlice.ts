@@ -97,6 +97,8 @@ export const productFeedbackSlice = createSlice({
       } else {
         state.suggestions.push(editedProduct);
       }
+
+      filter(state)
     },
 
     addComment: (state, action: PayloadAction<ICommentPayload>) => {
