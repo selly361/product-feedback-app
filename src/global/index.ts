@@ -149,6 +149,10 @@ button {
     color: #F2F4FE;
     font-size: 14px;
     font-weight: 700;
+
+    &:focus {
+        outline: 1px dashed black;
+    }
 }
 
 svg, button {
