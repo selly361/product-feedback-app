@@ -1,8 +1,14 @@
+import { BackButton, EditFeedBackForm } from 'components'
+
 import React from 'react'
+import { StyledEditFeedBack } from './EditFeedBack.styles'
 
 const EditFeedBackPage = () => {
   return (
-    <div>EditFeedBackPage</div>
+    <StyledEditFeedBack>
+      <BackButton />
+      <EditFeedBackForm />
+    </StyledEditFeedBack>
   )
 }
 
