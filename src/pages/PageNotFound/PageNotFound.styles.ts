@@ -28,14 +28,40 @@ export const StyledMessage = styled.h1`
 export const StyledLink = styled(Link)`
   color: black;
   font-size: 20px;
-  font-weight: 700;
-  width: 158px;
-  height: 44px;
+  font-weight: 400;
+  width: max-content;
+  height: 40px;
   border-radius: 10px;
-  display: grid;
-  place-items: center;
   text-decoration: none;
-  transition: .5s ease outline;
-  outline: 1px solid #AD1FEA;
     
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   position: relative;
+
+
+   &::after, &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: -8px;
+    right: 0;
+    background-color: #000;
+    transition: .5s ease width;
+    
+   }
+
+   &::before {
+    left: 0;
+    right: auto;
+    bottom: auto;
+    top: -8px;
+   }
+
+   &:hover::after, &:hover::before {
+    width: 0;
+   }
+
+   
 `;

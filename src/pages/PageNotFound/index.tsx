@@ -1,17 +1,23 @@
-import { StyledLink, StyledMessage, StyledPageNotFound } from './PageNotFound.styles'
+import { Arrow, ConfusedFace } from "icons";
+import {
+  StyledLink,
+  StyledMessage,
+  StyledPageNotFound,
+} from "./PageNotFound.styles";
 
-import { Button } from "components"
-import { ConfusedFace } from 'icons'
-import { useNavigate } from 'react-router-dom'
+import { Button } from "components";
 
 function PageNotFound() {
   return (
     <StyledPageNotFound>
       <StyledMessage>404</StyledMessage>
-        <ConfusedFace />
-        <StyledLink to="/">Go Back Home</StyledLink>
+      <ConfusedFace />
+      <StyledLink to="/">
+        <Arrow />
+        Go Back
+      </StyledLink>
     </StyledPageNotFound>
-  )
+  );
 }
 
-export default PageNotFound
+export default PageNotFound;
