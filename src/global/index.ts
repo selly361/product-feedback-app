@@ -47,7 +47,6 @@ body {
     display: grid;
     place-items: center;
     background-color: #F7F8FD;
-    margin-top: 10px;
     overflow-x: hidden;
 }
 
@@ -128,7 +127,7 @@ input, textarea {
 
     transition: .5s ease border;
 
-    &:focus {
+    &:focus-visible {
         border-color: #4661E6;
     }
 
@@ -150,8 +149,9 @@ button {
     font-size: 14px;
     font-weight: 700;
 
-    &:focus {
+    &:focus-visible {
         outline: 1px dashed black;
+        outline-offset: 2px;
     }
 }
 
