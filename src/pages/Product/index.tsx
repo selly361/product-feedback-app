@@ -1,6 +1,7 @@
 import { Comments, Product, ProductHeader } from 'components'
 
 import AddComment from 'components/PageTemplates/Product/AddComment'
+import PageNotFound from 'pages/PageNotFound'
 import { StyledProduct } from "./Product.styles"
 import { useAppSelector } from 'app/hooks'
 import { useParams } from 'react-router-dom'
@@ -12,6 +13,10 @@ const ProductPage = () => {
     const { suggestions, roadmap } = useAppSelector(state => state)
   
     const productReq = [...suggestions, ...roadmap].find(product => product.id === id)
+
+    if(!productReq) {
+      return <PageNotFound />
+    }
   
   return (
     <StyledProduct>

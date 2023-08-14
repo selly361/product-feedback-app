@@ -1,4 +1,4 @@
-import { AddFeedBackPage, EditFeedBackPage, HomePage, ProductPage, RoadMapPage } from "pages";
+import { AddFeedBackPage, EditFeedBackPage, HomePage, PageNotFound, ProductPage, RoadMapPage } from "pages";
 import { Route, Routes } from "react-router-dom";
 
 import { Fragment } from "react";
@@ -15,6 +15,7 @@ function App() {
         <Route path="/roadmap" element={<RoadMapPage />} />
         <Route path="/edit/:id" element={<EditFeedBackPage />} />
         <Route path="/product/:id" element={<ProductPage />} />
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
     </Fragment>
   );
