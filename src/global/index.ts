@@ -100,7 +100,7 @@ h6 {
 p {
     color: #3A4374;
     font-size: 13px;
-    font-weight: 600;
+    font-weight: 400;
     
 }
 

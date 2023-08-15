@@ -19,7 +19,7 @@ export const StyledDropDown = styled.div`
 
 export const SubContainer = styled.button`
   height: 25%;
-  width: 100%;
+  width: 100% !important;
   padding: 12px 24px 12px 24px;
   background-color: inherit;
   border-radius: 0px;

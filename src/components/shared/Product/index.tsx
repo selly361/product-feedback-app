@@ -37,7 +37,7 @@ function Product({ productReq }: IProductProps) {
   return (
     <StyledProduct
       onKeyDown={(e: KeyboardEvent<HTMLAnchorElement>) => handleKeyPress(e)}
-      tabIndex={0}
+      tabIndex={location.pathname == "/" ? 0 : -1}
       className={location.pathname == "/" ? "active" : ""}
       onClick={handleClick}
     >
