@@ -46,12 +46,20 @@ export const SortButton = styled.span`
   }
 `;
 
-export const SortButtonContainer = styled(Container)`
+export const SortButtonContainer = styled.button`
   cursor: pointer;
   position: relative;
-
+  background-color: transparent;
   height: 100%;
   margin-left: 22px;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  h3 {
+    color: white;
+  }
 
   h4,
   span {
@@ -66,6 +74,11 @@ export const SortButtonContainer = styled(Container)`
   &:hover h4,
   &:hover span {
     opacity: 0.75;
+  }
+
+  &:focus-visible {
+    outline: 1px dashed #AD1FEA;
+    outline-offset: 6px;
   }
 `;
 

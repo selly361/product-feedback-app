@@ -17,19 +17,31 @@ export const StyledDropDown = styled.div`
 
 `;
 
-export const SubContainer = styled.div`
-  height: 47px;
+export const SubContainer = styled.button`
+  height: 25%;
   width: 100%;
   padding: 12px 24px 12px 24px;
+  background-color: inherit;
+  border-radius: 0px;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
 
-  &:hover h5 {
+  &:focus-visible h5, &:hover h5 {
     color: #ad1fea;
   }
+
+  &:first-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  &:last-child {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
 `;
 
 export const Selector = styled.h5`
