@@ -1,26 +1,46 @@
-import { Container, ContentContainer, StyledProduct, SubContainer } from "./Product.styles";
+import {
+  Container,
+  ContentContainer,
+  StyledProduct,
+  SubContainer,
+} from "./Product.styles";
 import { Tag, UpvoteButton } from "components";
 import { useLocation, useNavigate } from "react-router-dom";
 
 import { CommentsIcon } from "icons";
 import { IProductProps } from "./Product.types";
+import { KeyboardEvent } from "react";
 import { numberOfComments } from "utils";
 import { useAppSelector } from "app/hooks";
 
 function Product({ productReq }: IProductProps) {
   const username = useAppSelector((state) => state.currentUser.username);
-    const navigate = useNavigate()
+  const navigate = useNavigate();
 
-    const location = useLocation()
+  const location = useLocation();
 
-    const handleClick = () => {
-      if(location.pathname === "/"){
-        navigate(`product/${productReq.id}`)
+  const handleClick = () => {
+    if (location.pathname === "/") {
+      navigate(`product/${productReq.id}`);
+    }
+  };
+
+  const handleKeyPress = (e: KeyboardEvent<HTMLAnchorElement>) => {
+
+    if (e.key === "Enter" && e.target === e.currentTarget) {
+      if (location.pathname === "/") {
+        navigate(`product/${productReq.id}`);
       }
     }
-    
+  };
+
   return (
-    <StyledProduct onClick={handleClick}>
+    <StyledProduct
+      onKeyDown={(e: KeyboardEvent<HTMLAnchorElement>) => handleKeyPress(e)}
+      tabIndex={0}
+      className={location.pathname == "/" ? "active" : ""}
+      onClick={handleClick}
+    >
       <Container>
         <UpvoteButton
           productId={productReq.id}

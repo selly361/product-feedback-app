@@ -1,15 +1,21 @@
 import styled from "styled-components";
 
-export const StyledProduct = styled.div`
+export const StyledProduct = styled.a`
   width: 100%;
   background-color: white;
   min-height: 151px;
   border-radius: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: start;
 
   padding: 28px 32px 0 32px;
 
   display: flex;
   justify-content: space-between;
+  
+
+  &.active {
     cursor: pointer;
     
     h3 {
@@ -18,6 +24,13 @@ export const StyledProduct = styled.div`
 
   &:hover h3 {
     color: #4661E6;
+  }
+
+  &:focus-visible {
+    outline: 2px dashed black;
+  }
+  
+  
   }
 `;
 
