@@ -10,19 +10,10 @@ export const useAddComment = (productId: string) => {
   const maxCharacters = 250
   const [charactersLeft, setCharactersLeft] = useState(maxCharacters)
   const dispatch = useAppDispatch()
-  const inputRef = useRef<HTMLTextAreaElement | null>(null)
 
   useEffect(() => {
     setCharactersLeft(maxCharacters - commentContent.trim().length)
   }, [commentContent])
-
-  useEffect(() => {
-
-    if(inputRef.current){
-        inputRef.current.focus()
-    }
-    
-  }, [])
 
   const handleCommentSubmit = (user: User) => {
     if (charactersLeft === 0 || !commentContent.trim()) return
@@ -40,6 +31,6 @@ export const useAddComment = (productId: string) => {
     setCommentContent('');
   };
 
-  return { commentContent, setCommentContent, charactersLeft, handleCommentSubmit, inputRef };
+  return { commentContent, setCommentContent, charactersLeft, handleCommentSubmit };
 }
 

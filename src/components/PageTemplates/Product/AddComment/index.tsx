@@ -18,14 +18,12 @@ function AddComment() {
     setCommentContent,
     charactersLeft,
     handleCommentSubmit,
-    inputRef,
   } = useAddComment(productId);
 
   return (
     <StyledAddComment>
       <StyledLabel>Add Comment</StyledLabel>
       <StyledInput
-        ref={inputRef}
         value={commentContent}
         onChange={(e: ChangeEvent<HTMLTextAreaElement>) => setCommentContent(e.target.value)}
         placeholder="Type your comment here"
